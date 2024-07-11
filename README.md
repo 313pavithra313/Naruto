@@ -1,2 +1,2 @@
-# Naruto
+# my projects
 Fullstack developer
