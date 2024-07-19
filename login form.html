@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="form">
+        <div class="box">
+            <div class="button">
+                <div id="color"></div>
+                <button type="button" class="page" onclick="login()">Login</button>
+                <button type="button" class="page" onclick="register()">Registration</button>
+            </div>
+            <div class="icon">
+                <img src="fb.png">
+                <img src="g.png">
+                <img src="twitter.png">
+                <img src="GitHub.png" height="30px">
+            </div>
+            <form id="login" class="form-1">
+                <input type="text" class="input" placeholder="Username" required></input>
+                <input type="text" class="input" placeholder="Password" required></input>
+                <input type="checkbox" class="checkbox"><span>Remember Me</span></input>
+                <button type="button" class="submit">Log In</button>
+            </form>
+            <form id="register" class="form-1">
+                <input type="text" class="input" placeholder="Name" required></input>
+                <input type="text" class="input" placeholder="Last Name" required></input>
+                <input type="text" class="input" placeholder="E-mail" required></input>
+                <input type="text" class="input" placeholder="Password" required></input>
+                <input type="text" class="input" placeholder="Repeat Password " required></input>
+                <input type="checkbox" class="checkbox"><span>I have read and agree to the terms</span></input>
+                <button class="submit" onclick="myalert()">
+                    Submit
+                </button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("color");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+        function myalert() {
+            alert("Successfully Registered");
+        }
+    </script>
+    
+</body>
+</html>
